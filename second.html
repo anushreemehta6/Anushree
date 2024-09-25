@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YI Coder</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <nav>
+        <div class="logo">
+          <img src="logo img.avif" alt="" width="80px" height="80px" />
+          
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="second.html">Chat Now</a></li>
+          <li><a href="#signin">Sign In</a></li>
+        </ul>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      </nav>
+    <div class="box">
+      <div class="img"></div>
+
+      <div class="chat-container">
+        <h3 class="inputBox">Input Box</h3>
+        <div class="userinput">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Type your prompt here..."
+          />
+          <button id="send-button">Send</button>
+        </div>
+        <br />
+        <br />
+        <h3>Output</h3>
+        <div class="chat-box" id="chat-box"></div>
+      </div>
+    </div>
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector(".nav-links");
+          navLinks.classList.toggle("show");
+        }
+      </script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YI Coder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="heading">YI Coder</p>
+    <nav>
+      <div class="logo">
+        <img src="logo img.avif" alt="" width="80px" height="80px" />
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="second.html">Chat Now</a></li>
+        <li><a href="#signin">Sign In</a></li>
+      </ul>
+      <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    </nav>
+    <!-- <!-- Slider Section -->
+  <div class="slider-container">
+    <!-- Slide 1 -->
+    <div class="slide" style="background-image: url('pic1.jpeg');"></div>
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('pic2.jpeg');"></div>
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('pic3.jpeg');"></div>
+    
+    <!-- Central Text and Button -->
+    <div class="centered-content">
+      <div class="centered-text">
+        Code Smarter, Not Harder: Your Personal Programming Assistant
+      </div>
+      <button class="chat-button" onclick="location.href='#chat'"> <a href="second.html">Chat Now</a></button>
+    </div>
+  </div>
+  </body>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+  <script src="script.js"></script>
+</html>
